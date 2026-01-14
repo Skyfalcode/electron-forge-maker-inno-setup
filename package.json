@@ -1,0 +1,60 @@
+{
+  "author": "skyfalcode",
+  "bugs": {
+    "url": "https://github.com/Skyfalcode/electron-forge-maker-inno-setup/issues"
+  },
+  "description": "Electron Forge maker that builds Windows installers using Inno Setup (ISCC).",
+  "dependencies": {
+    "@electron-forge/maker-base": "^7.10.2",
+    "@skyfalcode/inno-setup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">= 16.4.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/MakerInnoSetup.d.ts",
+      "default": "./dist/MakerInnoSetup.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "homepage": "https://github.com/Skyfalcode/electron-forge-maker-inno-setup#readme",
+  "keywords": [
+    "electron",
+    "electron-forge",
+    "maker",
+    "inno-setup",
+    "innosetup",
+    "iscc",
+    "windows",
+    "installer",
+    "packaging",
+    "setup",
+    "iss"
+  ],
+  "license": "MIT",
+  "main": "dist/MakerInnoSetup.js",
+  "name": "@skyfalcode/electron-forge-maker-inno-setup",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyfalcode/electron-forge-maker-inno-setup.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "sideEffects": false,
+  "type": "commonjs",
+  "types": "dist/MakerInnoSetup.d.ts",
+  "version": "1.0.0"
+}
